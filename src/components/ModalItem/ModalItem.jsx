@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./ModalItem.scss";
 
-const ModalItem = ({ title, button, index, }) => {
+const ModalItem = ({ title, button, }) => {
     return (
         <div className="ModalItem">
             <div className="ModalItem-title">
@@ -10,9 +10,9 @@ const ModalItem = ({ title, button, index, }) => {
                 <span className="ModalItem-line"></span>
             </div>
             {
-                button.map(el => {
+                button.map((el, i) => {
                     return (
-                        <div className="flex justify-start items-center">
+                        <div key={i} className="flex justify-start items-center">
                             <input className="checkbox" type="checkbox" name="" id={el} />
                             <label className="ModalItem-label" htmlFor={el}>{el}</label>
                         </div>

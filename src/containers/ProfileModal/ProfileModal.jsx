@@ -4,7 +4,7 @@ import ProfileImg from "../../assets/images/profileImg.png";
 
 import "./ProfileModal.scss";
 
-const ProfileModal = ({ setProfileModal }) => {
+const ProfileModal = ({ setProfileModal, setIsLogin }) => {
     return (
         <div className="ProfileModal">
             <div className="ProfileModal-left">
@@ -19,7 +19,7 @@ const ProfileModal = ({ setProfileModal }) => {
                 <button className="ProfileModal-btn">Профиль</button>
                 <button className="ProfileModal-btn">Редактировать профиль</button>
                 <button className="ProfileModal-btn">Мои операции</button>
-                <button className="ProfileModal-btn logout" onClick={() => setProfileModal(false)}>Выйти   <img src={LogoutIcon} alt="" /></button>
+                <button className="ProfileModal-btn logout" onClick={() => {setProfileModal(false); setIsLogin(false)}}>Выйти   <img src={LogoutIcon} alt="" /></button>
             </div>
         </div>
     )
