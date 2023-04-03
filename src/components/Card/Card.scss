@@ -1,0 +1,99 @@
+.Card {
+    width: 315px;
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 1px solid #FFC107;
+    margin-bottom: 50px;
+    transition: all ease .4s;
+    
+    &:hover {
+        box-shadow: 5px 15px 15px 5px rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    }
+    
+    &.bgGreen {
+        background-color: rgb(22, 121, 22);
+        border: 1px solid transparent;
+
+        
+    }
+
+    &-Img {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    &-name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 15px;
+
+    }
+
+    &-userName {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;  
+        color: #000000;
+    }
+
+    &-status {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #FF9900;
+        margin-right: 10px;
+    }
+
+    .avatarIcon {
+        width: 70px;
+        height: 70px;
+        margin: 0 10px 10px 0;
+    }
+
+    .statusIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: #000000;
+    }
+
+    &-price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 38px;
+        color: #000000;
+        border: 2px solid #FFC107;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 1px 15px;
+
+        &.rubl {
+            background: #FDD446;
+        }
+    }
+
+    &-btn {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+        background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
+        border-radius: 20px;
+        padding: 10px 100px;
+        margin-top: 20px;
+    }
+}

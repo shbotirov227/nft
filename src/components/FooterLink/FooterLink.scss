@@ -1,0 +1,23 @@
+.FooterLink {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 210px;
+
+    &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    &-link {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

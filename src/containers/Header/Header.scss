@@ -1,0 +1,106 @@
+.Header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .isLogin {
+        display: none;
+    }
+    
+    .search {
+        width: 575px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 10px 10px 10px 45px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 57.5949px;
+        outline: none;
+        transition: all ease .4s;
+        
+        &:focus {
+            border: 1px solid rgb(253, 212, 70);
+        }
+    }
+
+    svg {
+        position: absolute;
+        left: 15px;
+    }
+
+    &-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        margin-bottom: 40px;
+
+        .logo {
+            margin-right: 20px;
+        }
+
+        .login {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 24px;
+            color: #000000;
+            border: 2px solid #FDD446;
+            border-radius: 30px;
+            padding: 13px 70px;
+            margin-right: 20px;
+        } 
+        
+        .auth {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 24px;
+            color: #000000;
+            background: #FDD446;
+            border-radius: 30px;
+            padding: 13px 40px;
+        }
+    }
+    
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 40px;
+        // background: rgba(253, 212, 70, 0.5);
+        // filter: blur(137.129px);
+
+        .search {
+            width: 815px;
+
+        }
+
+        &-select {
+            width: 215px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+            color: #000000;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            outline: none;
+            transition: all ease .4s;
+            padding: 5px 20px;
+            cursor: pointer;
+            &:last-child {
+                width: 335px;
+            }
+
+            &:focus {
+                border: 1px solid rgb(253, 212, 70);
+            }
+        }
+    }
+}

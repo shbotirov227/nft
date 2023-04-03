@@ -1,0 +1,65 @@
+.ProfileModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &-left {
+        display: flex;
+    }
+
+    &-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+
+    &-btn {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        color: #000000;
+        padding: 15px 20px;
+
+        &.logout {
+            padding: 20px 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.4);
+        }
+
+        & img {
+            margin-left: 10px;
+        }
+    }
+
+    &-img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    &-about {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+}
