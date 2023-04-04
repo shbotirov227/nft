@@ -35,6 +35,8 @@ const Home = () => {
     const currentPosts = data.slice(firstPostIndex, lastPostIndex);
 
 
+    // let num = currentPosts.slice(1, 5)
+
     return (
         <div className="Home">
             <Header />
@@ -46,6 +48,7 @@ const Home = () => {
                     currentPosts.map(el => {
                         return (
                                 <Card
+                                    currentPosts={currentPosts}
                                     key={el.id}
                                     id={el.id}
                                     symbol={el.symbol}
